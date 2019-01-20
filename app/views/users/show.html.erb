@@ -8,6 +8,7 @@
         <img class="media-object img-rounded img-responsive" src="<%= gravatar_url(@user, { size: 500 }) %>" alt="">
       </div>
     </div>
+    <%= link_to '退会する', @user, method: :delete, data: { confirm: '退会するとタスクもすべて削除されます。本当に削除してよろしいですか？'}, class: 'btn btn-danger' %>
   </aside>
   <div class="col-xs-8">
   </div>
